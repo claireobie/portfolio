@@ -6,46 +6,13 @@
         Claire O'Brien
       </template>
       <template slot="lead">
-      Sleek design combined with utility and accessibility. 
+      Sleek design combined with utility and accessibility.
     </template>
     </b-jumbotron>
     <h1>{{ msg }}</h1>
-    <div> <div>
-      <b-carousel id="carousel1"
-                  style="text-shadow: 1px 1px 2px #333;"
-                  controls
-                  indicators
-                  background="#ababab"
-                  :interval="4000"
-                  img-width="400"
-                  img-height="200"
-                  v-model="slide"
-                  @sliding-start="onSlideStart"
-                  @sliding-end="onSlideEnd"
-      >
-
-        <b-carousel-slide
-          img-src="https://i.imgur.com/l8Ludme.jpg"
-        ></b-carousel-slide>
-        <b-carousel-slide
-          img-src="https://i.imgur.com/XekVUZF.jpg"
-        ></b-carousel-slide>
-        <b-carousel-slide
-          img-src="https://i.imgur.com/37wwLYA.png"
-        ></b-carousel-slide>
-        <b-carousel-slide
-          img-src="https://i.imgur.com/XekVUZF.jpg"
-        ></b-carousel-slide>
-        <b-carousel-slide
-          img-src="https://i.imgur.com/uRH3QwJ.png"
-        ></b-carousel-slide>
-      </b-carousel>
-      <p class="mt-4">
-        Slide #: {{ slide }}<br>
-        Sliding: {{ sliding }}
-      </p>
-
-    </div></div>
+    <div class = "carousel">
+      <carousel></carousel>
+    </div>
   </div>
 </template>
 
@@ -60,6 +27,9 @@ export default {
       slide: 0,
       sliding: null
     }
+  },
+  components:{
+      Carousel
   },
   methods: {
     onSlideStart (slide) {
@@ -102,5 +72,19 @@ a {
 
 #carousel1 {
   height: 600px;
+}
+
+.carousel {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.carousel-control-next-icon {
+  background-image: url("https://i.imgur.com/LqUjSKT.png");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("https://i.imgur.com/jKZ5h9O.png");
 }
 </style>
