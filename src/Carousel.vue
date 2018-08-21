@@ -33,7 +33,7 @@
           </b-carousel-slide>
           <b-carousel-slide img-src="https://i.imgur.com/wh5xYB9.png" alt="Pig latin application" style="height:450px; width:900px">
               <p class="image-text">
-                  This project started as a way to practice Javascript but turned into an
+                  I was part of a project to create a pig latin library. This project started as a way to practice Javascript but turned into an
                   <a href="https://www.npmjs.com/package/pig-latin-library" target="_blank" alt="Pig Latin library npm package" style="color: white">
                     npm package
                   </a> and
