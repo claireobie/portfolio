@@ -1,13 +1,14 @@
-var path = require('path')
-var webpack = require('webpack')
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
+  context: path.join(__dirname, '/'),
   entry: './src/main.js',
-  output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
-  },
+    output: {
+      path: path.join(__dirname),
+      filename: './public/dist/build.js',
+      publicPath: '/'
+    },
   module: {
     rules: [
       {
@@ -18,39 +19,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.scss$/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-          'sass-loader'
-        ],
-      },
-      {
-        test: /\.sass$/,
-        use: [
-          'vue-style-loader',
-          'css-loader',
-          'sass-loader?indentedSyntax'
-        ],
-      },
-      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
           loaders: {
-            // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
-            // the "scss" and "sass" values for the lang attribute to the right configs here.
-            // other preprocessors should work out of the box, no loader config like this necessary.
-            'scss': [
-              'vue-style-loader',
-              'css-loader',
-              'sass-loader'
-            ],
-            'sass': [
-              'vue-style-loader',
-              'css-loader',
-              'sass-loader?indentedSyntax'
-            ]
           }
           // other vue-loader options go here
         }
@@ -66,7 +38,8 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
-      }
+      },
+      { test: /\.json$/, loader: 'json-loader' }
     ]
   },
   resolve: {
@@ -83,7 +56,12 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  node: {
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {

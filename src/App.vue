@@ -2,7 +2,7 @@
   <div id="app">
     <b-jumbotron bg-variant="info" text-variant="white" border-variant="dark">
       <template slot="header">
-        <img src="./assets/claire-logo.png" >
+        <img src="https://i.imgur.com/oLXEigP.png" alt="Squiggly brackets with three dots in the middle">
         Claire O'Brien
       </template>
       <template slot="lead">
