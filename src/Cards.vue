@@ -13,9 +13,9 @@
                   For this project, I collaborated with a co-worker to decide the layout, color palette, and aesthetic of the website.
                   Then, we built the site within the Cascade CMS used by the University.
                   <br><br>
-                  This application was built using the Cascade CMS, CSS for styling, and the Ponderosa Template used by the University of Montana.
+                  This website was built using the Cascade CMS, CSS for styling, and the Ponderosa Template used by the University of Montana.
               </p>
-        <b-button href="https://www.umt.edu/mobile/" target="_blank" variant="primary">Visit this project</b-button>
+        <b-button href="https://www.umt.edu/mobile/" target="_blank" variant="secondary">Visit this project</b-button>
       </b-card>
       <b-card title="What's at the Food Bank?"
               img-src="https://i.imgur.com/jkN2q43.png"
@@ -33,7 +33,7 @@
                   This application was built using the MERN stack,
                   and deployed using Heroku.
               </p>
-        <b-button href="https://rocky-refuge-16506.herokuapp.com/" target="_blank" variant="primary">Visit this project</b-button>
+        <b-button href="https://rocky-refuge-16506.herokuapp.com/" target="_blank" variant="secondary">Visit this project</b-button>
       </b-card>
     </div>
     <div class = "second-row">
@@ -49,9 +49,9 @@
                   The main portion of the project was re-designing the homepage.
                   It was mostly a simple revamp of choosing a color palette, creating new images for the site, and changing the layout.
                   <br><br>
-                  This application was built using the Cascade CMS, CSS for styling, and the Ponderosa Template used by the University of Montana.
+                  This website was built using the Cascade CMS, CSS for styling, and the Ponderosa Template used by the University of Montana.
               </p>
-        <b-button href="https://www.umt.edu/writingcenter/" target="_blank" variant="primary">Visit this project</b-button>
+        <b-button href="https://www.umt.edu/writingcenter/" target="_blank" variant="secondary">Visit this project</b-button>
       </b-card>
       <b-card title="Banana Hat: a Pig Latin translator"
               img-src="https://i.imgur.com/wh5xYB9.png"
@@ -70,7 +70,7 @@
                   This application was built using Vue.js, Javascript, Express.js, Node.js,
                   and deployed using Heroku.
               </p>
-        <b-button href="https://pig-latin-library.herokuapp.com/" target="_blank" variant="primary">Visit this project</b-button>
+        <b-button href="https://pig-latin-library.herokuapp.com/" target="_blank" variant="secondary">Visit this project</b-button>
       </b-card>
     </div>
     <div class = "third-row">
@@ -85,10 +85,10 @@
                   playing Hangman to relax during breaks.
                   Its main purpose was to help us learn how to use Vue.js.
                   <br><br>
-                  TThis application was built using Vue.js, Javascript, Express.js, Node.js
+                  This application was built using Vue.js, Javascript, Express.js, Node.js
                   and deployed using Heroku.
               </p>
-        <b-button href="https://obscure-inlet-95154.herokuapp.com/" target="_blank" variant="primary">Visit this project</b-button>
+        <b-button href="https://obscure-inlet-95154.herokuapp.com/" target="_blank" variant="secondary">Visit this project</b-button>
       </b-card>
       <b-card title="A Language Between Worlds"
               img-src="https://i.imgur.com/R1GuFLe.jpg"
@@ -104,7 +104,7 @@
                 This application was built using the PEVN stack,
                 and deployed using Heroku.
               </p>
-        <b-button href="https://powerful-lake-84714.herokuapp.com/" target="_blank" variant="primary">Visit this project</b-button>
+        <b-button href="https://powerful-lake-84714.herokuapp.com/" target="_blank" variant="secondary">Visit this project</b-button>
       </b-card>
   </div>
 </template>
