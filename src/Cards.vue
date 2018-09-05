@@ -61,7 +61,7 @@
               class="mb-2">
               <p class="image-text">
                   I was part of a project to create a pig latin library. This project started as a way to practice Javascript but turned into an
-                  <a style = "color:white" href="https://www.npmjs.com/package/pig-latin-library" target="_blank" alt="Pig Latin library npm package">
+                  <a style = "color: black" href="https://www.npmjs.com/package/pig-latin-library" target="_blank" alt="Pig Latin library npm package">
                       npm package
                   </a>
                   and an application that we deployed to Heroku.
